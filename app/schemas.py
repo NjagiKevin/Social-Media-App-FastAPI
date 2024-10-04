@@ -13,6 +13,7 @@ class PostCreate(PostBase): # creating/updating post
 class PostResponse(PostBase): # response model
     id:int
     created_at:datetime.datetime
+    owner_id: int
     
     class Config:
         from_attributes = True
